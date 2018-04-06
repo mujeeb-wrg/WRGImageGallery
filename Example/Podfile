@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WRGImageGallery_Example' do
+  pod 'WRGImageGallery', :path => '../'
+
+  target 'WRGImageGallery_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
