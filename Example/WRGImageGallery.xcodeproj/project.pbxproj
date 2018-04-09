@@ -15,6 +15,11 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8FFD410668AC5958E505FD6D /* Pods_WRGImageGallery_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB76D9C67DFCF02634D60FA5 /* Pods_WRGImageGallery_Example.framework */; };
 		E5F1813B73F3AFB468D3D395 /* Pods_WRGImageGallery_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A08B65509D5802B28DD13A /* Pods_WRGImageGallery_Tests.framework */; };
+		EAA488D4207793AB0052DBEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		EAA488DB207797560052DBEF /* WRGImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA488DA207797560052DBEF /* WRGImageScrollView.swift */; };
+		EAA488DC207797ED0052DBEF /* WRGImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA488DA207797560052DBEF /* WRGImageScrollView.swift */; };
+		EAA488DE20779C030052DBEF /* WRGImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA488DD20779C030052DBEF /* WRGImageCell.swift */; };
+		EAA488DF20779E3C0052DBEF /* WRGImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA488DD20779C030052DBEF /* WRGImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		05A08B65509D5802B28DD13A /* Pods_WRGImageGallery_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WRGImageGallery_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21FFF09C73B49A80E9796CFD /* WRGImageGallery.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WRGImageGallery.podspec; path = ../WRGImageGallery.podspec; sourceTree = "<group>"; };
+		21FFF09C73B49A80E9796CFD /* WRGImageGallery.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WRGImageGallery.podspec; path = ../WRGImageGallery.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* WRGImageGallery_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WRGImageGallery_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,13 +45,16 @@
 		607FACE51AFB9204008FA782 /* WRGImageGallery_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WRGImageGallery_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		80E1D3C6B2955501AC2419AE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		80E1D3C6B2955501AC2419AE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		84B6A2E6FDA2E01AF095E42F /* Pods-WRGImageGallery_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WRGImageGallery_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WRGImageGallery_Tests/Pods-WRGImageGallery_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		945768F3EF2A2F5E3AAFCCB6 /* Pods-WRGImageGallery_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WRGImageGallery_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WRGImageGallery_Example/Pods-WRGImageGallery_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9D3E714E110FC3F3A067C074 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9D3E714E110FC3F3A067C074 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9DF857F1B8FF8A314701423A /* Pods-WRGImageGallery_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WRGImageGallery_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WRGImageGallery_Example/Pods-WRGImageGallery_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CAF0E321EC3A13516EB49A47 /* Pods-WRGImageGallery_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WRGImageGallery_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WRGImageGallery_Tests/Pods-WRGImageGallery_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DB76D9C67DFCF02634D60FA5 /* Pods_WRGImageGallery_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WRGImageGallery_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA488D62077970B0052DBEF /* WRGImageGallery_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WRGImageGallery_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		EAA488DA207797560052DBEF /* WRGImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRGImageScrollView.swift; sourceTree = "<group>"; };
+		EAA488DD20779C030052DBEF /* WRGImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRGImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +123,13 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				EAA488DA207797560052DBEF /* WRGImageScrollView.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				EAA488D62077970B0052DBEF /* WRGImageGallery_Example-Bridging-Header.h */,
+				EAA488DD20779C030052DBEF /* WRGImageCell.swift */,
 			);
 			name = "Example for WRGImageGallery";
 			path = WRGImageGallery;
@@ -215,7 +226,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0920;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -289,10 +300,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WRGImageGallery_Example/Pods-WRGImageGallery_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/WRGImageGallery/WRGImageGallery.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WRGImageGallery.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,9 +334,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WRGImageGallery_Tests/Pods-WRGImageGallery_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -370,7 +386,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA488DE20779C030052DBEF /* WRGImageCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				EAA488DB207797560052DBEF /* WRGImageScrollView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +397,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA488DF20779E3C0052DBEF /* WRGImageCell.swift in Sources */,
+				EAA488DC207797ED0052DBEF /* WRGImageScrollView.swift in Sources */,
+				EAA488D4207793AB0052DBEF /* ViewController.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,13 +538,22 @@
 			baseConfigurationReference = 9DF857F1B8FF8A314701423A /* Pods-WRGImageGallery_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/WRGImageGallery\"/**",
+				);
 				INFOPLIST_FILE = WRGImageGallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WRGImageGallery/WRGImageGallery_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -532,13 +562,21 @@
 			baseConfigurationReference = 945768F3EF2A2F5E3AAFCCB6 /* Pods-WRGImageGallery_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/WRGImageGallery\"/**",
+				);
 				INFOPLIST_FILE = WRGImageGallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WRGImageGallery/WRGImageGallery_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

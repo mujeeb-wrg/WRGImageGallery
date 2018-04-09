@@ -5,7 +5,6 @@ target 'WRGImageGallery_Example' do
 
   target 'WRGImageGallery_Tests' do
     inherit! :search_paths
-
     
   end
 end
