@@ -15,7 +15,11 @@ class WRGImageCell: UICollectionViewCell {
     
     var imageUrl:String?{
         didSet{
-            
+            let url = URL(string:imageUrl!)
+            let resource =  ImageResource(downloadURL:url!)
+            KingfisherManager.shared.retrieveImage(with: resource, options: nil, progressBlock: nil) { (image, error, cache, nil) in
+                self.scrollImageView.display(image: image!)
+            }
         }
     }
     
