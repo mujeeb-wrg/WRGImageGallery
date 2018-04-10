@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class WRGImageScrollView: UIScrollView {
+open class WRGZoomableImageView: UIScrollView {
     
     static let kZoomInFactorFromMinWhenDoubleTap: CGFloat = 2
     
@@ -57,7 +57,7 @@ open class WRGImageScrollView: UIScrollView {
         decelerationRate = UIScrollViewDecelerationRateFast
         delegate = self
         
-        NotificationCenter.default.addObserver(self, selector: #selector(WRGImageScrollView.changeOrientationNotification), name: Notification.Name.UIDeviceOrientationDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(WRGZoomableImageView.changeOrientationNotification), name: Notification.Name.UIDeviceOrientationDidChange, object: nil)
     }
     
     public func adjustFrameToCenter() {
@@ -148,7 +148,7 @@ open class WRGImageScrollView: UIScrollView {
         zoomView!.isUserInteractionEnabled = true
         addSubview(zoomView!)
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(WRGImageScrollView.doubleTapGestureRecognizer(_:)))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(WRGZoomableImageView.doubleTapGestureRecognizer(_:)))
         tapGesture.numberOfTapsRequired = 2
         zoomView!.addGestureRecognizer(tapGesture)
         
@@ -193,7 +193,7 @@ open class WRGImageScrollView: UIScrollView {
         }
         else {
             let center = gestureRecognizer.location(in: gestureRecognizer.view)
-            let zoomRect = zoomRectForScale(WRGImageScrollView.kZoomInFactorFromMinWhenDoubleTap * minimumZoomScale, center: center)
+            let zoomRect = zoomRectForScale(WRGZoomableImageView.kZoomInFactorFromMinWhenDoubleTap * minimumZoomScale, center: center)
             zoom(to: zoomRect, animated: true)
         }
     }
@@ -227,7 +227,7 @@ open class WRGImageScrollView: UIScrollView {
     }
 }
 
-extension WRGImageScrollView: UIScrollViewDelegate{
+extension WRGZoomableImageView: UIScrollViewDelegate{
     
     public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return zoomView

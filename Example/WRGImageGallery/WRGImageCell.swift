@@ -11,7 +11,7 @@ import Kingfisher
 
 class WRGImageCell: UICollectionViewCell {
     
-    @IBOutlet weak var scrollImageView: WRGImageScrollView!
+    @IBOutlet weak var scrollImageView: WRGZoomableImageView!
     
     var imageUrl:String?{
         didSet{
