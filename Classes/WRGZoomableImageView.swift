@@ -49,8 +49,10 @@ open class WRGZoomableImageView: UIScrollView {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
+
     
     fileprivate func initialize() {
+        initView()
         showsVerticalScrollIndicator = false
         showsHorizontalScrollIndicator = false
         bouncesZoom = true
@@ -58,6 +60,10 @@ open class WRGZoomableImageView: UIScrollView {
         delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(WRGZoomableImageView.changeOrientationNotification), name: Notification.Name.UIDeviceOrientationDidChange, object: nil)
+    }
+    
+    func initView()  {
+        
     }
     
     public func adjustFrameToCenter() {

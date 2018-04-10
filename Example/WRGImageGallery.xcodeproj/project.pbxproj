@@ -16,8 +16,6 @@
 		8FFD410668AC5958E505FD6D /* Pods_WRGImageGallery_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB76D9C67DFCF02634D60FA5 /* Pods_WRGImageGallery_Example.framework */; };
 		E5F1813B73F3AFB468D3D395 /* Pods_WRGImageGallery_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A08B65509D5802B28DD13A /* Pods_WRGImageGallery_Tests.framework */; };
 		EAA488D4207793AB0052DBEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		EAA488DB207797560052DBEF /* WRGZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA488DA207797560052DBEF /* WRGZoomableImageView.swift */; };
-		EAA488DC207797ED0052DBEF /* WRGZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA488DA207797560052DBEF /* WRGZoomableImageView.swift */; };
 		EAA488DE20779C030052DBEF /* WRGImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA488DD20779C030052DBEF /* WRGImageCell.swift */; };
 		EAA488DF20779E3C0052DBEF /* WRGImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA488DD20779C030052DBEF /* WRGImageCell.swift */; };
 /* End PBXBuildFile section */
@@ -53,7 +51,6 @@
 		CAF0E321EC3A13516EB49A47 /* Pods-WRGImageGallery_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WRGImageGallery_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WRGImageGallery_Tests/Pods-WRGImageGallery_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DB76D9C67DFCF02634D60FA5 /* Pods_WRGImageGallery_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WRGImageGallery_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA488D62077970B0052DBEF /* WRGImageGallery_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WRGImageGallery_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		EAA488DA207797560052DBEF /* WRGZoomableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRGZoomableImageView.swift; sourceTree = "<group>"; };
 		EAA488DD20779C030052DBEF /* WRGImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRGImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,9 +118,10 @@
 		607FACD21AFB9204008FA782 /* Example for WRGImageGallery */ = {
 			isa = PBXGroup;
 			children = (
+				EA4DFDC5207CB5210004E5C4 /* Manager */,
+				EA4DFDC4207CB51B0004E5C4 /* View */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				EAA488DA207797560052DBEF /* WRGZoomableImageView.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -168,6 +166,20 @@
 				9D3E714E110FC3F3A067C074 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		EA4DFDC4207CB51B0004E5C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EA4DFDC5207CB5210004E5C4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,7 +402,6 @@
 			files = (
 				EAA488DE20779C030052DBEF /* WRGImageCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				EAA488DB207797560052DBEF /* WRGZoomableImageView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,7 +411,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA488DF20779E3C0052DBEF /* WRGImageCell.swift in Sources */,
-				EAA488DC207797ED0052DBEF /* WRGZoomableImageView.swift in Sources */,
 				EAA488D4207793AB0052DBEF /* ViewController.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);

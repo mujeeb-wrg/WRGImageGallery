@@ -6,8 +6,8 @@
 //  Copyright © 2018 CocoaPods. All rights reserved.
 //
 
-import UIKit
 import Kingfisher
+import WRGImageGallery
 
 class WRGImageCell: UICollectionViewCell {
     
@@ -17,6 +17,7 @@ class WRGImageCell: UICollectionViewCell {
         didSet{
             let url = URL(string:imageUrl!)
             let resource =  ImageResource(downloadURL:url!)
+            KingfisherManager.shared.cache.clearDiskCache()
             KingfisherManager.shared.retrieveImage(with: resource, options: nil, progressBlock: nil) { (image, error, cache, nil) in
                 self.scrollImageView.display(image: image!)
             }
