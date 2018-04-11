@@ -15,8 +15,9 @@ open class WRGGalleryController: UIViewController {
     
     open var imageUrl = [String]()
     
-    override open func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
+        labelPosition.text = "\(1)/\(imageUrl.count)"
     }
     
     @IBAction func buttonCloseDidClick(_ sender: Any) {
