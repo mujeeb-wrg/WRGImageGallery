@@ -9,13 +9,13 @@ import UIKit
 
 open class WRGImageGallery: NSObject {
     
-    open  func show(urls:[String], viewControl: UIViewController){
+    open  func show(urls:[String], viewController: UIViewController){
         let podBundle = Bundle(for: classForCoder)
         if let bundleURL = podBundle.url(forResource: "WRGImageGallery", withExtension: "bundle") {
             if let bundle = Bundle(url: bundleURL) {
                 if let galleryController = UIStoryboard(name: "ImageGallery", bundle: bundle).instantiateInitialViewController() as? WRGGalleryController{
                     galleryController.imageUrl = urls
-                    viewControl.present(galleryController, animated: true, completion: nil)
+                    viewController.present(galleryController, animated: true, completion: nil)
                 }
             }else {
                 assertionFailure("Could not load the bundle")
