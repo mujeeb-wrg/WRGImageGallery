@@ -12,15 +12,26 @@ open class WRGGalleryController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var labelPosition: UILabel!
-    
+    open var initialPosition:Int = 0
     open var imageUrl = [String]()
     
     open override func viewDidLoad() {
         super.viewDidLoad()
         labelPosition.text = "\(1)/\(imageUrl.count)"
+        
+        
+    }
+    
+    open override func viewWillAppear(_ animated: Bool) {
+        collectionView.setNeedsLayout()
+        collectionView.layoutIfNeeded()
+        let indexPath = IndexPath(item: initialPosition, section: 0)
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        scrollViewDidEndDecelerating(collectionView)
     }
     
     @IBAction func buttonCloseDidClick(_ sender: Any) {
+        
         dismiss(animated: true)
     }
     
@@ -46,7 +57,7 @@ extension WRGGalleryController: UICollectionViewDelegate, UICollectionViewDataSo
         let x = collectionView.contentOffset.x
         let w = collectionView.bounds.size.width
         let currentPage = Int(ceil(x/w))
-        labelPosition.text = "\(currentPage + 1)/\(imageUrl.count)"
+        labelPosition.text = "\(currentPage + 1) of \(imageUrl.count)"
     }
     
 }

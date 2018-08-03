@@ -1,19 +1,23 @@
 PODS:
   - Kingfisher (4.6.1)
-  - WRGImageGallery (0.1.0):
+  - WRGImageGallery (0.1.1):
     - Kingfisher (~> 4.0)
 
 DEPENDENCIES:
   - WRGImageGallery (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kingfisher
+
 EXTERNAL SOURCES:
   WRGImageGallery:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
-  WRGImageGallery: 7bec3d4ab051da1fc0bdc25d255280c759039982
+  WRGImageGallery: 3d6c3b811ecca76c0e3c914aa766a72197b80f58
 
 PODFILE CHECKSUM: a7ea737e1c18c0feb99c3159377bf72e23487014
 
-COCOAPODS: 1.4.0.rc.1
+COCOAPODS: 1.5.2

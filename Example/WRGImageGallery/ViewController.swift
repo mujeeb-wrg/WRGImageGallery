@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
    
     @IBAction func buttonShowGalleryDidClick(_ sender: Any) {
-         WRGImageGallery().show(urls: imageUrl, viewControl: self)
+        WRGImageGallery().show(urls: imageUrl, viewController: self, initialPosition:0)
     }
     
 }
