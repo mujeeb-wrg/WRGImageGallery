@@ -190,7 +190,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				7103242FB7D96BB837891141 /* [CP] Embed Pods Frameworks */,
-				734AEA1CF9825AE392B9E19F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,8 +208,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				E369F1A615BF710FC00DB007 /* [CP] Embed Pods Frameworks */,
-				FEB02BB7120F2CA0DBC70E9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,39 +320,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WRGImageGallery_Example/Pods-WRGImageGallery_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		734AEA1CF9825AE392B9E19F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WRGImageGallery_Example/Pods-WRGImageGallery_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E369F1A615BF710FC00DB007 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WRGImageGallery_Tests/Pods-WRGImageGallery_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WRGImageGallery_Tests/Pods-WRGImageGallery_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FDEC21EDD12F454A0539E2A0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,21 +336,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FEB02BB7120F2CA0DBC70E9C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WRGImageGallery_Tests/Pods-WRGImageGallery_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
