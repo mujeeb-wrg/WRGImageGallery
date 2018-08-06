@@ -12,14 +12,25 @@ open class WRGGalleryController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var labelPosition: UILabel!
+    @IBOutlet weak var buttonClose: UIButton!
+    
     open var initialPosition:Int = 0
     open var imageUrl = [String]()
+
     
     open override func viewDidLoad() {
         super.viewDidLoad()
         labelPosition.text = "\(1)/\(imageUrl.count)"
         
-        
+        let podBundle = Bundle(for: classForCoder)
+        if let bundleURL = podBundle.url(forResource: "WRGImageGallery", withExtension: "bundle") {
+            if let bundle = Bundle(url: bundleURL) {
+               let image = UIImage(named: "ic_close", in: bundle, compatibleWith: nil)
+                if let image = image{
+                    buttonClose.setImage(image, for: .normal)
+                }
+            }
+        }
     }
     
     open override func viewWillAppear(_ animated: Bool) {
