@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WRGImageGallery'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Swipable image gallery'
   
   s.swift_version = '4.1'
