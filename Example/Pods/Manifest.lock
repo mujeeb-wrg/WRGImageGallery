@@ -1,0 +1,23 @@
+PODS:
+  - Kingfisher (4.6.1)
+  - WRGImageGallery (0.1.2):
+    - Kingfisher (~> 4.0)
+
+DEPENDENCIES:
+  - WRGImageGallery (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kingfisher
+
+EXTERNAL SOURCES:
+  WRGImageGallery:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
+  WRGImageGallery: 387a430d3de34fca062261d673ff720b8fbae69a
+
+PODFILE CHECKSUM: a7ea737e1c18c0feb99c3159377bf72e23487014
+
+COCOAPODS: 1.5.3

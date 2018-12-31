@@ -1,0 +1,6 @@
+framework module WRGImageGallery {
+  umbrella header "WRGImageGallery-umbrella.h"
+
+  export *
+  module * { export * }
+}
