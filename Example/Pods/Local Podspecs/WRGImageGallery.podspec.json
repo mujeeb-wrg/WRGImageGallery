@@ -1,7 +1,8 @@
 {
   "name": "WRGImageGallery",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "summary": "Swipable image gallery",
+  "swift_version": "4.1",
   "description": "This library will help you to create a Image gallery from a given array of image url.",
   "homepage": "https://github.com/wrg-mujeeb/WRGImageGallery",
   "license": {
@@ -13,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/wrg-mujeeb/WRGImageGallery.git",
-    "tag": "0.1.2"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "11.0"
@@ -25,11 +26,11 @@
     ]
   },
   "pod_target_xcconfig": {
-    "SWIFT_VERSION": "4.0"
+    "SWIFT_VERSION": "4.2"
   },
   "dependencies": {
     "Kingfisher": [
-      "~> 4.0"
+      "~> 5.0"
     ]
   }
 }
