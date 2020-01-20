@@ -38,6 +38,9 @@ open class WRGGalleryController: UIViewController {
         collectionView.layoutIfNeeded()
         let indexPath = IndexPath(item: initialPosition, section: 0)
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+    }
+    
+    open override func viewDidAppear(_ animated: Bool) {
         scrollViewDidEndDecelerating(collectionView)
     }
     

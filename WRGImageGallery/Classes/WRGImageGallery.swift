@@ -16,6 +16,7 @@ open class WRGImageGallery: NSObject {
                 if let galleryController = UIStoryboard(name: "ImageGallery", bundle: bundle).instantiateInitialViewController() as? WRGGalleryController{
                     galleryController.imageUrl = urls
                     galleryController.initialPosition = initialPosition
+                    galleryController.modalPresentationStyle = .fullScreen
                     viewController.present(galleryController, animated: true, completion: nil)
                 }
             }else {
